@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide — Platinum Road</title>
+<meta name="description" content="A complete, offline trophy guide for Grand Theft Auto VI on PlayStation 5: all 55 official trophies, a checklist that saves, a roadmap to the platinum, and a missables page.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; Official list, 18 Nov 2026</p>
+    <h1>Platinum Road</h1>
+    <p class="subtitle">Every trophy, in plain words, with a plan to the platinum. Works fully offline — your progress never leaves this browser.</p>
+  </div>
+  <div class="score" aria-label="Progress">
+    <div class="big"><span id="earnedCount">0</span><span class="of">/ 55</span></div>
+    <div class="bar" role="progressbar" aria-label="Trophies earned"><div id="barFill"></div></div>
+    <p id="gradeCounts" class="grade-counts"></p>
+    <p id="nextUp" class="next-up"></p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <button type="button" data-view="checklist" class="active">Checklist</button>
+  <button type="button" data-view="roadmap">Roadmap</button>
+  <button type="button" data-view="missables">Missables</button>
+  <button type="button" data-view="about">About &amp; sources</button>
+</nav>
+
+<main>
+  <section id="view-checklist" class="view">
+    <div class="controls">
+      <label>Search <input id="search" type="search" placeholder="Trophy name or guide word…" autocomplete="off"></label>
+      <label>Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Kind
+        <select id="kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="activity">Activities</option>
+          <option value="collectible">Collectibles</option>
+          <option value="robbery">Robberies</option>
+          <option value="money">Money</option>
+          <option value="exploration">Exploration</option>
+        </select>
+      </label>
+      <label class="check"><input id="spoilers" type="checkbox" checked> Hide story spoilers</label>
+      <label class="check"><input id="unearnedOnly" type="checkbox"> Unearned only</label>
+    </div>
+    <p id="resultCount" class="muted"></p>
+    <ul id="list" class="list"></ul>
+    <div id="detail" class="detail" hidden></div>
+    <div class="tools">
+      <button id="export" type="button">Export progress (JSON)</button>
+      <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+      <button id="reset" type="button">Reset progress</button>
+      <button id="demo" type="button">Load demo progress (13 earned)</button>
+    </div>
+    <p class="muted">Progress is stored in this browser only (localStorage). Export it before you clear browser data. The demo button is for screenshots and testing — it ticks 13 early story and activity trophies (never the platinum).</p>
+  </section>
+
+  <section id="view-roadmap" class="view" hidden>
+    <h2>Roadmap to the platinum</h2>
+    <p>Early guides estimate the story at about 60 hours and the platinum at about 200 hours. Both figures are <strong>estimates, not yet confirmed</strong>. The official list does not publish what 100% completion contains, so the last stage is a cleanup sweep, not a fixed list.</p>
+    <ol id="roadmap" class="roadmap"></ol>
+    <h3>Save habits that protect the platinum</h3>
+    <ul>
+      <li>Make a <strong>manual save at the start of every chapter</strong>. There is no confirmed mission replay for every moment yet.</li>
+      <li>Early guides report that <strong>cheats disable trophies</strong>, as in GTA V. Treat that as reported, not yet confirmed — do not use cheats on your platinum save.</li>
+      <li>Do side content as you pass it. Stranger strands, activities and collectibles are easier in the area than on a return trip.</li>
+    </ul>
+  </section>
+
+  <section id="view-missables" class="view" hidden>
+    <h2>Missables</h2>
+    <p><strong>There is no confirmed missable list yet.</strong> The game has only just released, and no early guide has published a verified list. This page will only list a trophy as missable when a source confirms it — until then, it lists the one reported case and the habit that protects you.</p>
+    <div class="callout">
+      <h3>Potentially missable — reported, not yet confirmed</h3>
+      <p><strong>Positive Mental Attitude</strong> — meditate at all 18 spots across Leonida. Early guides (PlanetGTA6, OutputLag, KeenGamer) report that the balcony meditation spot in Chapter 1 may not be revisit-able, because there is no mission replay for it. That is a <em>report</em>, not a confirmed fact.</p>
+      <p><strong>What to do:</strong> meditate at the balcony spot while you are still in Chapter 1, and make a manual save at the start of Chapter 1 before you do anything else there.</p>
+    </div>
+    <h3>Everything else</h3>
+    <p>Every other trophy in the official list is either a story trophy (unmissable — it pops when you finish the mission), an open-world activity, a collectible, a robbery or a money trophy. All of those can be done after the story, in free roam, as far as the official descriptions show. If a later guide confirms another missable, add it here — do not treat a rumour as a fact.</p>
+    <p class="muted">Sources: Exophase for the official list; PlanetGTA6 / OutputLag / KeenGamer for the Chapter 1 report.</p>
+  </section>
+
+  <section id="view-about" class="view" hidden>
+    <h2>About &amp; sources</h2>
+    <p>This guide is an unofficial, fan-made tracker. It is not affiliated with Rockstar Games or Take-Two Interactive, and it uses no Rockstar logo or official artwork.</p>
+    <h3>What is official, and what is not</h3>
+    <ul>
+      <li><strong>Official:</strong> all 55 trophy names, descriptions and grades, and the PSN progress targets (for example 250 stunts, 42 Shooting Range challenges, 14 drone race locations, 18 meditation spots, 52 areas of Leonida). Sources: Exophase and PSNProfiles, frozen 18 November 2026.</li>
+      <li><strong>Our own advice:</strong> every guide in this app is written in our own words from the official description. Where the official description does not pin down a place or a step, the guide says so plainly instead of inventing one.</li>
+      <li><strong>Reported, not yet confirmed:</strong> the Chapter 1 meditation spot, cheats disabling trophies, the ~60 hour story and ~200 hour platinum estimates. Each is labelled where it appears.</li>
+    </ul>
+    <h3>Sources</h3>
+    <ul>
+      <li>Exophase — Grand Theft Auto VI trophies (PS5): exophase.com/game/grand-theft-auto-vi-psn/trophies/</li>
+      <li>PSNProfiles — Grand Theft Auto VI trophies: psnprofiles.com/trophies/43531-grand-theft-auto-vi</li>
+      <li>PlanetGTA6, OutputLag, KeenGamer, PowerPyx — early-guide reports, used only where labelled.</li>
+    </ul>
+    <p class="muted">Grand Theft Auto VI released 19 November 2026 on PlayStation 5 and Xbox Series X|S. There is no PC version at launch.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. Trophy names, descriptions and grades are PlayStation's official list.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
